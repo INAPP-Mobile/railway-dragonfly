@@ -5,9 +5,9 @@ LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/railway-d
 # Dragonfly port - use $PORT if set (Railway sets this), else default to 6379
 EXPOSE 6379
 
-# Healthcheck - test Redis protocol ping
+# Healthcheck - test Redis protocol ping (defaults to port 6379)
 HEALTHCHECK --interval=30s --timeout=5s \
-  CMD redis-cli -p ${PORT:-6379} ping || exit 1
+  CMD redis-cli ping || exit 1
 
 # Entrypoint to respect Railway's PORT env var
 ENTRYPOINT ["sh", "-c", "exec dragonfly --port ${PORT:-6379}"]

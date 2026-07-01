@@ -45,3 +45,18 @@ No external dependencies required.
 | `DRAGONFLY_REQUIREPASS` | Auth password | (empty) |
 | `DRAGONFLY_MAXMEMORY` | Max memory limit | (empty) |
 | `DRAGONFLY_MAXMEMORY_POLICY` | Eviction policy | (empty) |
+
+## Local Development
+
+```bash
+git clone https://github.com/INAPP-Mobile/railway-dragonfly && cd railway-dragonfly
+cp .env.example .env
+# Edit .env if needed
+docker run -d --name dragonfly -p 6379:6379 -v dragonfly-data:/data dragonflydb/dragonfly:v1.27.1
+# Test connection
+redis-cli ping  # Should return PONG
+```
+
+## License
+
+This template packages [Dragonfly](https://github.com/dragonflydb/dragonfly) which is licensed under the **Dragonfly License (Source Available)**. See the [LICENSE](https://github.com/dragonflydb/dragonway/blob/main/LICENSE) for details. Template maintained by [INAPP-Mobile](https://github.com/INAPP-Mobile).
