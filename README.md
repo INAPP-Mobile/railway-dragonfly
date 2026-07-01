@@ -1,6 +1,6 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/dragonfly)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/dragonfly-1)
 
 ![OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-dragonfly/main/og-image.svg)
 
@@ -41,10 +41,10 @@ No external dependencies required.
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `DRAGONFLY_PORT` | Internal port | 6379 |
+| `PORT` | Dragonfly port (Redis-compatible) | 6379 |
 | `DRAGONFLY_REQUIREPASS` | Auth password | (empty) |
 | `DRAGONFLY_MAXMEMORY` | Max memory limit | (empty) |
-| `DRAGONFLY_MAXMEMORY_POLICY` | Eviction policy | (empty) |
+| `DRAGONFLY_MAXMEMORY_POLICY` | Eviction policy | allkeys-lfu |
 
 ## Local Development
 
@@ -59,4 +59,4 @@ redis-cli ping  # Should return PONG
 
 ## License
 
-This template packages [Dragonfly](https://github.com/dragonflydb/dragonfly) which is licensed under the **Dragonfly License (Source Available)**. See the [LICENSE](https://github.com/dragonflydb/dragonway/blob/main/LICENSE) for details. Template maintained by [INAPP-Mobile](https://github.com/INAPP-Mobile).
+This template packages [Dragonfly](https://github.com/dragonflydb/dragonfly) which is licensed under the **Dragonfly License (Source Available)**. See the [LICENSE](https://github.com/dragonflydb/dragonfly/blob/main/LICENSE) for details. Template maintained by [INAPP-Mobile](https://github.com/INAPP-Mobile).
