@@ -1,6 +1,6 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/dragonfly-1)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/dragonfly-2)
 
 ![OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-dragonfly/main/og-image.svg)
 
