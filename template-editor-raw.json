@@ -1,0 +1,22 @@
+{
+  "DRAGONFLY_PORT": {
+    "value": "6379",
+    "description": "Port Dragonfly listens on (default: 6379). Railway injects PORT for routing."
+  },
+  "DRAGONFLY_REQUIREPASS": {
+    "value": "${{secret(24)}}",
+    "description": "Require authentication on connection. Auto-generated \u2014 set to secure your cache."
+  },
+  "DRAGONFLY_MAXMEMORY": {
+    "value": "",
+    "description": "Maximum memory limit (e.g., 1gb, 500mb). Leave empty for unlimited."
+  },
+  "DRAGONFLY_MAXMEMORY_POLICY": {
+    "value": "",
+    "description": "Eviction policy when maxmemory reached (e.g., allkeys-lfu, volatile-lru)."
+  },
+  "DRAGONFLY_LOG_LEVEL": {
+    "value": "warning",
+    "description": "Log level: debug, info, warning, error, fatal."
+  }
+}
