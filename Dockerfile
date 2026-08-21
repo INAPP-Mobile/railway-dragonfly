@@ -1,4 +1,4 @@
-FROM docker.dragonflydb.io/dragonflydb/dragonfly:v1.39.0
+FROM docker.dragonflydb.io/dragonflydb/dragonfly:v1.40.1
 
 LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/railway-dragonfly"
 
